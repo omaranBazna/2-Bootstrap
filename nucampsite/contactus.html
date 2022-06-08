@@ -80,21 +80,55 @@
             </div>
             <div class="col-md-10">
                 <form>
-                    <label for="firstname">First Name</label><input id="firstname" name="firstname" placeholder="First name" type="text" />
-                    <label for="lastname">Last Name</label><input id="lastname" name="lastname"placeholder="Last name" type="text" />
-                    <label for="areacode" >Area Code</label><input id="areacode" name="areacode" placeholder="Areacode" type="tel" />
-                    <label for="telnum" >Tel. Number</label><input id="telnum" name="telNum" placeholder="Tel. number" type="tel" />
-                   <label for="yes"> May we contact you ?</label>
+                    <div class="row">
+                      <label for="firstname" class="col-md-2">First Name:</label>
+                      <div class="col-md-10">
+                      <input id="firstname" name="firstname" placeholder="First name" type="text" />
+                      </div>
+                      </div>
+                      <div class="row">
+                      <label for="lastname" class="col-md-2">Last Name:</label>
+                      <div class="col-md-2">
+                      <input id="lastname" name="lastname"placeholder="Last name" type="text" />
+                     </div>
+                     </div>
+                     <div class="row">
+                       <label for="areacode" class="col-md-2">Contact Tel:</label>
+                       <div class="col-5 col-md-3">
+                       <input id="areacode" name="areacode" placeholder="Areacode" type="tel" />
+                    </div>
+                    <div class="col-7">
+                       <input id="telnum" name="telNum" placeholder="Tel. number" type="tel" />
+                    </div>
+                     </div>
+                     <div class="row">
+                        <label for="email" class="col-md-2" >Email:</label>
+                        <div class="col-md-10">
+                          <input id="email" name="email" placeholder="Email" type="email" />
+                        </div>
+                      </div>
+                      <div class="row">
+                   <label for="yes" class="offset-md-2"> May we contact you ?</label>
                     <input type="radio" name="contactRadio" value="yes" id="yes" ><label for="yes
                     ">Yes</label>
                     <input type="radio" name="contactRadio" value="no" id="no"><label for="no">No</label>
-                   <label for="feedack"> your Feedback</label>
-                    <textarea name="feedback" row="8" id="feedback">
+
+                    </div>
+                    <div class="row">
+                   <label for="feedack" class="col-md-2"> your Feedback</label>
+                   <div class="col-md-10">
+                    <textarea name="feedback" rows="8" id="feedback">
 
                     </textarea>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-md-2 col-md-10">
                     <button type="submit" >
                         Send Feedback
                     </button>
+                    </div>
+                    </div>
                 </form>
                 
               
