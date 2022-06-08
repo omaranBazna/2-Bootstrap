@@ -80,51 +80,55 @@
             </div>
             <div class="col-md-10">
                 <form>
-                    <div class="row">
-                      <label for="firstname" class="col-md-2">First Name:</label>
+                    <div class="form-group row">
+                      <label for="firstname" class="col-md-2 col-form-label">First Name:</label>
                       <div class="col-md-10">
-                      <input id="firstname" name="firstname" placeholder="First name" type="text" />
+                      <input id="firstname" class="form-control" name="firstname" placeholder="First name" type="text" />
                       </div>
                       </div>
-                      <div class="row">
-                      <label for="lastname" class="col-md-2">Last Name:</label>
-                      <div class="col-md-2">
-                      <input id="lastname" name="lastname"placeholder="Last name" type="text" />
+                      <div class="form-group row">
+                      <label for="lastname" class="col-md-2  col-form-label">Last Name:</label>
+                      <div class="col-md-10">
+                      <input id="lastname" class="form-control"  name="lastname"placeholder="Last name" type="text" />
                      </div>
                      </div>
-                     <div class="row">
-                       <label for="areacode" class="col-md-2">Contact Tel:</label>
+                     <div class="form-group row">
+                       <label for="areacode" class="col-md-2  col-form-label">Contact Tel:</label>
                        <div class="col-5 col-md-3">
-                       <input id="areacode" name="areacode" placeholder="Areacode" type="tel" />
+                       <input id="areacode" class="form-control"  name="areacode" placeholder="Areacode" type="tel" />
                     </div>
                     <div class="col-7">
-                       <input id="telnum" name="telNum" placeholder="Tel. number" type="tel" />
+                       <input id="telnum"  class="form-control"  name="telNum" placeholder="Tel. number" type="tel" />
                     </div>
                      </div>
-                     <div class="row">
-                        <label for="email" class="col-md-2" >Email:</label>
+                     <div class="form-group row">
+                        <label for="email" class="col-md-2  col-form-label" >Email:</label>
                         <div class="col-md-10">
-                          <input id="email" name="email" placeholder="Email" type="email" />
+                          <input id="email" class="form-control"  name="email" placeholder="Email" type="email" />
                         </div>
                       </div>
-                      <div class="row">
-                   <label for="yes" class="offset-md-2"> May we contact you ?</label>
-                    <input type="radio" name="contactRadio" value="yes" id="yes" ><label for="yes
+                      <div class="form-group row">
+                   <label for="yes" class="offset-md-2  col-form-label"> May we contact you ?</label>
+                   <div class="form-check form-check-inline">
+                    <input type="radio"  class="form-check-input" name="contactRadio" value="yes" id="yes" ><label class="form-check-label" for="yes
                     ">Yes</label>
-                    <input type="radio" name="contactRadio" value="no" id="no"><label for="no">No</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input"  name="contactRadio" value="no" id="no"><label class="form-check-label" for="no"  >No</label>
+                </div>
 
                     </div>
-                    <div class="row">
-                   <label for="feedack" class="col-md-2"> your Feedback</label>
+                    <div class="form-group row">
+                   <label for="feedack" class="col-md-2  col-form-label"> your Feedback</label>
                    <div class="col-md-10">
-                    <textarea name="feedback" rows="8" id="feedback">
+                    <textarea  class="form-control"  name="feedback" rows="8" id="feedback">
 
                     </textarea>
                     </div>
                     </div>
-                    <div class="row">
+                    <div class="form-group row">
                         <div class="offset-md-2 col-md-10">
-                    <button type="submit" >
+                    <button type="submit" class="btn btn-primary" >
                         Send Feedback
                     </button>
                     </div>
