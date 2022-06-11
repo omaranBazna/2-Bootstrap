@@ -26,12 +26,15 @@ reach out to me at :omran4d@gmail.com-->
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div  class="col-4 col-sm-3 align-self-center">
+                <div  class="col-md-4 col-sm-3 align-self-center">
                  <img src="img/logo.png" class="img-fliud" />
                 </div>
                 <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
+                </div>
+                <div class="col-md-4 col-xl-2">
+                    <a href="#reserveForm" class="text-nowrap"><button class="btn btn-info mt-4">Reserve Campsite</button></a>
                 </div>
             </div>
         </div>
@@ -96,42 +99,7 @@ reach out to me at :omran4d@gmail.com-->
         </div>
 
         <div class="row row-content  align-items-center"> <!-- Task2 -->
-            <div class="col-sm-6 mx-auto">
-                <div class="card">
-                    <h3 class="card-header bg-info text-white">
-                        Reserve a Campsite
-                    </h3>
-
-                    <div class="card-body">
-                        <form>
-                            <div class="row">
-                                <div class=" col-sm-6">
-                                <label for="numcampers" class="form-label">Number of Campers</label>
-                                </div>
-                                <div class=" col-sm-6">
-                                 <select  name="numcampers" id="numcampers">
-                                      <option value="Select..">Select..</option>
-                                      <option value="1">1</option>
-                                      <option value="2">2</option>
-                                      <option value="3">3</option>
-                                      <option value="4">4</option>
-                                      <option value="5">5</option>
-                                      <option value="6">6</option>
-                                    </select>
-                                    </div>
-                            </div>
-
-                            <div class="row">
-                                <label class="col-sm-6" for="date" class="form-label">Date</label>
-                                <div class="col-sm-6">
-                                <input type="date" id="date" name="date" placeholder="date" />
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                 
-                </div>
-            </div>
+           
             <div class="col-sm-4 col-md-3 order-sm-last">
                <h2  class="text-sm-right">Our Community Partners</h2>
             </div>
@@ -145,9 +113,53 @@ reach out to me at :omran4d@gmail.com-->
                     </div>
                 </div>
             </div>
-
+ 
         </div>
-
+            <div class="row row-content">
+                <div class="col-sm-6 mx-auto">
+                    <div class="card">
+                        <h3 class="card-header bg-info text-white">
+                            Reserve a Campsite
+                        </h3>
+    
+                        <div class="card-body">
+                            <form id="reserveForm">
+                                <div class="row form-group">
+                                    <div class=" col-sm-6">
+                                    <label for="numcampers" class="col-form-label">Number of Campers</label>
+                                    </div>
+                                    <div class=" col-sm-6">
+                                     <select  name="numcampers" id="numcampers" class="form-control">
+                                          <option value="Select..">Select..</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                          <option value="6">6</option>
+                                        </select>
+                                        </div>
+                                </div>
+    
+                                <div class="row form-group">
+                                    <label class="col-sm-6" for="date" class="col-form-label">Date</label>
+                                    <div class="col-sm-6">
+                                    <input type="date" id="date" name="date" placeholder="date"  class="form-control"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="submit" class="btn btn-primary">
+                                            Search
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
    </div>
     <footer class="footer-site">
         <div class="container">
