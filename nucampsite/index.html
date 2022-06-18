@@ -47,13 +47,47 @@ reach out to me at :omran4d@gmail.com-->
     <div class="modal fade" id="ReserveModal" rol="dialog">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content" >
-              <div class="modal-header">
-                  <h3 class="modal-title">LogIn</h3><button type="button" class="close" data-dismiss="modal">&times;</button>
+              <div class="modal-header bg-info text-white">
+                  <h3 class="modal-title">Reserve a Campsite</h3><button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
               <div class="modal-body">
                   <div class="container-fluid">
                     <form>
-                      
+                        <div class="row form-group">
+                            <div class=" col-sm-6">
+                            <label for="numcampers" class="col-form-label">Number of Campers</label>
+                            </div>
+                            <div class=" col-sm-6">
+                             <select  name="numcampers" id="numcampers" class="form-control">
+                                  <option value="Select..">Select..</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                </select>
+                                </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <label class="col-sm-6" for="date" class="col-form-label">Date</label>
+                            <div class="col-sm-6">
+                            <input type="date" id="date" name="date" placeholder="date"  class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <button type="submit" class="btn btn-primary">
+                                    Search
+                                </button>
+                            </div>
+                            <div class="col-3">
+                                <button type="reset" class="btn btn-warning">
+                                    Reset
+                                </button>
+                            </div>
+                        </div>
                     </form>
                   </div>
               </div>
