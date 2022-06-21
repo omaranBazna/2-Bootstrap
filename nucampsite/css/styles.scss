@@ -9,26 +9,26 @@ $body-font: "Open Sans", sans-serif;
 $header-font: "Lobster", cursive;
 
 body{
-    font-family:"Open Sans",sans-serif;
+    font-family:$body-font;
 }
 h1,h2,h3{
-    font-family:"Lobster",cursive;
+    font-family:$header-font;
 }
 h2{
-    color:rgb(58, 58, 209);
+    color:$color-primary;
 }
 header h2{
-    color:rgb(131, 131, 241);
+    color:$color-pale;
 }
 .footer-site{
-    background-image:linear-gradient(rgb(196, 196, 196),white);
+    background-image:linear-gradient($color-pale,white);
 
     padding:20px 0;
 }
 .jumbotron{ 
     margin:0;
     padding:20px;
-    background-image: linear-gradient(to right ,blue,blue,rgb(72, 7, 110));
+    background-image: linear-gradient(to right ,$color-secondary,$color-primary,$color-dark);
     color:white;
 }
 .row-content{
@@ -37,7 +37,7 @@ header h2{
     min-height: 200px;
 }
 .navbar{
-    background-color: blueviolet;
+    background-color: $color-mid;
    
 }
 .tab-content{
@@ -62,6 +62,7 @@ a,a:hover{
     transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -webkit-transition: opacity 1s ease-in-out;
+    color:$color-black-transparent;
 }
 
 .carousel-caption:hover {
@@ -69,6 +70,9 @@ a,a:hover{
     transition: opacity .55s ease-in-out;
     -moz-transition: opacity .55s ease-in-out;
     -webkit-transition: opacity .55s ease-in-out;
+}
+.carousel{
+    border:1px solid $color-secondary;
 }
 #carouselButton{
     position:absolute;
