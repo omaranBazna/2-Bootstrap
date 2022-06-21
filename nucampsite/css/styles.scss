@@ -1,0 +1,68 @@
+body{
+    font-family:"Open Sans",sans-serif;
+}
+h1,h2,h3{
+    font-family:"Lobster",cursive;
+}
+h2{
+    color:rgb(58, 58, 209);
+}
+header h2{
+    color:rgb(131, 131, 241);
+}
+.footer-site{
+    background-image:linear-gradient(rgb(196, 196, 196),white);
+
+    padding:20px 0;
+}
+.jumbotron{ 
+    margin:0;
+    padding:20px;
+    background-image: linear-gradient(to right ,blue,blue,rgb(72, 7, 110));
+    color:white;
+}
+.row-content{
+    padding: 50px 0;
+    border-bottom:1px ridge;
+    min-height: 200px;
+}
+.navbar{
+    background-color: blueviolet;
+   
+}
+.tab-content{
+    border:1px solid #DDD;
+    border-top:none;
+    padding:10px;
+}
+a,a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+.carousel-caption{
+    background-color:rgba(0,0,0,.9);
+    border-radius:15px;
+}
+.carousel-caption h5{
+ font-weight:bold;
+}
+
+.carousel-caption{
+    opacity: 0.3;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+}
+
+.carousel-caption:hover {
+    opacity: 1.0;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity .55s ease-in-out;
+}
+#carouselButton{
+    position:absolute;
+    right:0;
+    bottom:0;
+    z-index:100;
+}
