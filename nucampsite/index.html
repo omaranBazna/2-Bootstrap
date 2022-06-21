@@ -243,14 +243,12 @@ reach out to me at :omran4d@gmail.com-->
                     <span class="sr-only">Next</span>
                 </a>
              
-                <div class="btn-group" id="carouselButtons">
-                    <button class="btn btn-danger btn-sm" id="carouselPause">
-                        <i class="fa fa-pause"></i>
-                    </button>
-                    <button class="btn btn-danger btn-sm" id="carouselPlay">
+               
+                
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
                        <i class="fa fa-play"></i>
                     </button>
-                    </div>
+                   
 
 
             </div>  
@@ -401,12 +399,10 @@ reach out to me at :omran4d@gmail.com-->
 <script>
 $(function(){
     $(".carousel").carousel({interval:2000})
-    $("#carouselPause").click(function(){
+    $("#carouselButton").click(function(){
         $(".carousel").carousel("pause")
     })
-    $("#carouselPlay").click(function(){
-        $(".carousel").carousel("cycle")
-    })
+
 })
 
 </script>
