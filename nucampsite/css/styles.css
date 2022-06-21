@@ -60,3 +60,8 @@ a,a:hover{
     -moz-transition: opacity .55s ease-in-out;
     -webkit-transition: opacity .55s ease-in-out;
 }
+#carouselButtons{
+    position:absolute;
+    right:0;
+    bottom:0;
+}
