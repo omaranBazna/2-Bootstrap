@@ -82,4 +82,14 @@ a, a:hover {
   z-index: 100;
 }
 
+#ReserveModal .modal-header {
+  background-color: #17A2B8;
+  color: white;
+}
+
+#loginModal .modal-header {
+  background-color: #17A2B8;
+  color: white;
+}
+
 /*# sourceMappingURL=styles.css.map */

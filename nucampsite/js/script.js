@@ -13,3 +13,21 @@ $(function(){
     })
 
 })
+
+
+
+$(function(){
+$("#reserveBtn").click(function(event){
+  ///  alert("work");
+  event.preventDefault();
+$("#ReserveModal").modal("show");
+});
+})
+
+
+$(function(){
+  $("#loginBtn").click(function(){
+    ///  alert("work");
+    $("#loginModal").modal("toggle");
+  });
+  })
