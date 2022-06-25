@@ -17,10 +17,9 @@ $(function(){
 
 
 $(function(){
-$("#reserveBtn").click(function(event){
+$("#reserveBtn").click(function(){
   ///  alert("work");
-  event.preventDefault();
-$("#ReserveModal").modal("show");
+ $("#ReserveModal").modal("show");
 });
 })
 
@@ -28,6 +27,6 @@ $("#ReserveModal").modal("show");
 $(function(){
   $("#loginBtn").click(function(){
     ///  alert("work");
-    $("#loginModal").modal("toggle");
+    $("#loginModal").modal("show");
   });
   })
